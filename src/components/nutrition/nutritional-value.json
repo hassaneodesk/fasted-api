@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_nutrition_nutritional_values",
+  "info": {
+    "displayName": "nutritionalValue"
+  },
+  "options": {},
+  "attributes": {
+    "fat": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "carbs": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "protein": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "calories": {
+      "type": "integer",
+      "min": 0,
+      "required": true
+    }
+  }
+}

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "recipe",
     "pluralName": "recipes",
-    "displayName": "Recipe"
+    "displayName": "Recipe",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,16 +24,55 @@
       },
       "type": "string"
     },
-    "Fat": {
+    "nutritionalValue": {
+      "displayName": "nutritionalValue",
+      "type": "component",
+      "repeatable": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "integer",
+      "component": "nutrition.nutritional-value",
       "required": true
     },
-    "Carbs": {
+    "ingredients": {
+      "displayName": "Ingredients",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "ingredients.ingredients"
+    },
+    "directions": {
+      "displayName": "Directions",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "directions.directions",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "servings": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -40,7 +80,8 @@
       },
       "type": "integer",
       "required": true,
-      "min": 0
+      "default": 1,
+      "min": 1
     }
   }
 }
