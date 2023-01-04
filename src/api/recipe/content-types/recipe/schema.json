@@ -82,6 +82,12 @@
       "required": true,
       "default": 1,
       "min": 1
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "recipes"
     }
   }
 }
