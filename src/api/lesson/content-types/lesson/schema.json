@@ -4,7 +4,8 @@
   "info": {
     "singularName": "lesson",
     "pluralName": "lessons",
-    "displayName": "Lesson"
+    "displayName": "Lesson",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,16 +18,26 @@
       "unique": true
     },
     "preview": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "isPremium": {
       "type": "boolean",
       "default": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "lesson_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::lesson-category.lesson-category",
+      "inversedBy": "lessons"
     }
   }
 }

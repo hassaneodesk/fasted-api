@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lesson_categories",
+  "info": {
+    "singularName": "lesson-category",
+    "pluralName": "lesson-categories",
+    "displayName": "lessonCategory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "lessons": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::lesson.lesson",
+      "mappedBy": "lesson_categories"
+    }
+  }
+}
