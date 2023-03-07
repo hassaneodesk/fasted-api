@@ -10,12 +10,24 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "pluginOptions": {
+        "deepl": {
+          "translate": "translate"
+        },
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "preview": {
       "type": "media",
@@ -23,21 +35,47 @@
       "required": true,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "pluginOptions": {
+        "deepl": {
+          "translate": "translate"
+        },
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "isPremium": {
       "type": "boolean",
-      "default": true
+      "default": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "content": {
       "type": "richtext",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "deepl": {
+          "translate": "translate"
+        },
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "lesson_categories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::lesson-category.lesson-category",
-      "inversedBy": "lessons"
+      "inversedBy": "lessons",
+      "pluginOptions": {
+        "deepl": {
+          "translate": "translate"
+        }
+      }
     }
   }
 }

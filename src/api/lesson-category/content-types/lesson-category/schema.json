@@ -4,7 +4,8 @@
   "info": {
     "singularName": "lesson-category",
     "pluralName": "lesson-categories",
-    "displayName": "lessonCategory"
+    "displayName": "lessonCategory",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,9 @@
       "pluginOptions": {
         "i18n": {
           "localized": true
+        },
+        "deepl": {
+          "translate": "translate"
         }
       },
       "type": "string",
@@ -29,6 +33,11 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::lesson.lesson",
+      "pluginOptions": {
+        "deepl": {
+          "translate": "translate"
+        }
+      },
       "mappedBy": "lesson_categories"
     }
   }

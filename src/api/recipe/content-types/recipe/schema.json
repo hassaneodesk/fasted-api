@@ -20,6 +20,9 @@
       "pluginOptions": {
         "i18n": {
           "localized": true
+        },
+        "deepl": {
+          "translate": "translate"
         }
       },
       "type": "string"
@@ -43,6 +46,9 @@
       "pluginOptions": {
         "i18n": {
           "localized": true
+        },
+        "deepl": {
+          "translate": "translate"
         }
       },
       "component": "ingredients.ingredients"
@@ -54,6 +60,9 @@
       "pluginOptions": {
         "i18n": {
           "localized": true
+        },
+        "deepl": {
+          "translate": "translate"
         }
       },
       "component": "directions.directions",
@@ -87,6 +96,11 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::category.category",
+      "pluginOptions": {
+        "deepl": {
+          "translate": "translate"
+        }
+      },
       "mappedBy": "recipes"
     }
   }

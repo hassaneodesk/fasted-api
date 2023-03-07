@@ -20,6 +20,9 @@
       "pluginOptions": {
         "i18n": {
           "localized": true
+        },
+        "deepl": {
+          "translate": "translate"
         }
       },
       "type": "string",
@@ -30,6 +33,11 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::recipe.recipe",
+      "pluginOptions": {
+        "deepl": {
+          "translate": "translate"
+        }
+      },
       "inversedBy": "categories"
     }
   }

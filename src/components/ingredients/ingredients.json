@@ -1,13 +1,19 @@
 {
   "collectionName": "components_ingredients_ingredients",
   "info": {
-    "displayName": "Ingredients"
+    "displayName": "Ingredients",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "ingredient": {
       "type": "text",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "deepl": {
+          "translate": "translate"
+        }
+      }
     }
   }
 }
