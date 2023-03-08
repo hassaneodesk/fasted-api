@@ -10,21 +10,10 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": true
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
     "title": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        },
-        "deepl": {
-          "translate": "translate"
-        }
-      },
+      "pluginOptions": {},
       "type": "string",
       "required": true,
       "unique": true
@@ -33,11 +22,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::lesson.lesson",
-      "pluginOptions": {
-        "deepl": {
-          "translate": "translate"
-        }
-      },
+      "pluginOptions": {},
       "mappedBy": "lesson_categories"
     }
   }
