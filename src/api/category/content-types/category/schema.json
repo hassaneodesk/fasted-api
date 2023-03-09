@@ -22,7 +22,7 @@
           "localized": true
         },
         "deepl": {
-          "translate": "translate"
+          "translate": "copy"
         }
       },
       "type": "string",

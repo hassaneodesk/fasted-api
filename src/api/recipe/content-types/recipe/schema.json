@@ -98,7 +98,7 @@
       "target": "api::category.category",
       "pluginOptions": {
         "deepl": {
-          "translate": "translate"
+          "translate": "copy"
         }
       },
       "mappedBy": "recipes"
