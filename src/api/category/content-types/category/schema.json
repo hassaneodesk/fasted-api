@@ -10,21 +10,10 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": true
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
     "name": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        },
-        "deepl": {
-          "translate": "copy"
-        }
-      },
+      "pluginOptions": {},
       "type": "string",
       "unique": true,
       "required": true
@@ -33,11 +22,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::recipe.recipe",
-      "pluginOptions": {
-        "deepl": {
-          "translate": "translate"
-        }
-      },
+      "pluginOptions": {},
       "inversedBy": "categories"
     }
   }
