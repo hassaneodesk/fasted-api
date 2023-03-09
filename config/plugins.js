@@ -21,9 +21,9 @@ module.exports = ({ env }) => ({
         enabled: true,
         config: {
           // your DeepL API key
-          apiKey: '4f178dde-8c3b-b978-d028-46d6a5b71876:fx',
+          apiKey: 'fa2ced8f-cbeb-5b4c-376a-1036e5d92770',
           // whether to use the free or paid api, default true
-          freeApi: true,
+          freeApi: false,
           // Which field types are translated (default string, text, richtext, components and dynamiczones)
           translatedFieldTypes: [
             'string',
@@ -33,7 +33,7 @@ module.exports = ({ env }) => ({
             'dynamiczone',
           ],
           // If relations should be translated (default true)
-          translateRelations: true,
+          translateRelations: false,
         },
     },
 });
